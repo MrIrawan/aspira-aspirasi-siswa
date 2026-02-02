@@ -41,4 +41,12 @@ class AspirationModel {
         $this->db->bind('id', $id);
         return $this->db->single();
     }
+
+    public function sendToInbox($user_id, $subject, $message) {
+        $this->db->query("INSERT INTO inbox (user_id, subject, message) VALUES (:uid, :sub, :msg)");
+        $this->db->bind('uid', $user_id);
+        $this->db->bind('sub', $subject);
+        $this->db->bind('msg', $message);
+        return $this->db->execute();
+    }
 }
