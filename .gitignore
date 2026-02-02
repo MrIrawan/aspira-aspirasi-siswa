@@ -1,0 +1,47 @@
+# =====================
+# OS & Editor junk
+# =====================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# =====================
+# Dependency / Vendor
+# (kalau nanti pakai Composer)
+# =====================
+vendor/
+composer.lock
+
+# =====================
+# Environment & Config
+# =====================
+.env
+.env.*
+app/config/config.php
+
+# =====================
+# Uploads & User Content
+# =====================
+public/uploads/*
+!public/uploads/.gitkeep
+
+# =====================
+# Logs & Cache
+# =====================
+logs/
+*.log
+cache/
+
+# =====================
+# Temporary files
+# =====================
+tmp/
+temp/
+
+# =====================
+# Build / Distribution
+# =====================
+dist/
+build/
